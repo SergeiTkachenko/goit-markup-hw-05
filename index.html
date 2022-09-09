@@ -78,7 +78,9 @@
         <div class="hero-overlay">
           <div class="container">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="hero-btn" type="button">Замовити послугу</button>
+            <button class="hero-btn" type="button" data-modal-open
+              >Замовити послугу</button
+            >
           </div>
         </div>
       </section>
@@ -155,30 +157,40 @@
           <h2 class="what-we-do-title">Чим ми займаємося</h2>
           <ul class="what-we-do-img">
             <li class="what-we-do-img-content">
-              <img
-                src="./img/what_we_do/img1.jpg"
-                alt="програмування"
-                width="370"
-                height="294"
-              />
+              <div class="what-we-do-wrapper">
+                <img
+                  src="./img/what_we_do/img1.jpg"
+                  alt="Десктопні додатки"
+                  width="370"
+                  height="294"
+                />
+                <p class="what-we-do-text">Десктопні додатки</p>
+              </div>
             </li>
             <li class="what-we-do-img-content">
-              <img
-                src="./img/what_we_do/img2.jpg"
-                alt="дизайн"
-                width="370"
-                height="294"
-              />
+              <div class="what-we-do-wrapper">
+                <img
+                  src="./img/what_we_do/img2.jpg"
+                  alt="Мобільні додатки"
+                  width="370"
+                  height="294"
+                />
+                <p class="what-we-do-text">Мобільні додатки</p>
+              </div>
             </li>
             <li class="what-we-do-img-content">
-              <img
-                src="./img/what_we_do/img3.jpg"
-                alt="графіка"
-                width="370"
-                height="294"
-              />
-            </li> </ul
-        ></div>
+              <div class="what-we-do-wrapper">
+                <img
+                  src="./img/what_we_do/img3.jpg"
+                  alt="Дизайнерські рішення"
+                  width="370"
+                  height="294"
+                />
+                <p class="what-we-do-text">Дизайнерські рішення</p>
+              </div>
+            </li>
+          </ul></div
+        >
       </section>
       <!-- чим займаємося кінець -->
 
@@ -684,5 +696,15 @@
       </div>
       <!-- футер кінець -->
     </footer>
+
+    <!-------------------- modal ---------------------->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          &#10006;
+        </button>
+      </div>
+    </div>
+    <script src="./js/model.js"></script>
   </body>
 </html>
